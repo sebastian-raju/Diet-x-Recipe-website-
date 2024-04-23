@@ -1,0 +1,122 @@
+.footer-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 30px;
+}
+
+.footer-left-section{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.footer-right-section{
+  display: flex;
+  flex-direction: column;
+  align-items: start; 
+  justify-content: center;
+}
+
+.footer-input-container{
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.subscribe-input{
+  width: 100%;
+  padding: 22px 26px;
+  border: none;
+  background-color: rgb(247, 247, 247);
+  outline: none;
+}
+
+
+.subscribe-btn{
+  padding: 22px 26px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+
+
+@media (max-width:768px){
+  .footer-section{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:500px){
+  .footer-input-container{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .subscribe-input{
+    margin-bottom: 10px;
+  }
+
+  .subscribe-btn{
+    width: 100%;
+  }
+}
+
+
+
+
+/* sub-footer-section */
+
+
+.sub-footer-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  align-items: start;
+}
+
+.diet-x-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 10px;
+}
+
+.food-recipe-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 10px;
+}
+
+.get-touch-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  column-gap: 20px;
+  align-items: start;
+  justify-content: start;
+}
+
+
+
+
+
+.footer-wrapper{
+  background-color: black;
+  color: white;
+}
+
+
+@media(max-width:550px){
+  .sub-footer-section{
+    grid-template-columns: 1fr 1fr;
+ 
+  }
+}

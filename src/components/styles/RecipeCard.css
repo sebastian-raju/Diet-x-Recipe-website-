@@ -1,0 +1,130 @@
+
+
+.recipe-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.recipe-card:hover{
+  transform: scale(0.98);
+}
+
+.recipe-card:active {
+  transform: scale(0.96);
+}
+
+
+
+.recipe-img-container{
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  
+}
+
+.meal-type{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 13px;
+  color: white;
+  background-color: black;
+  box-shadow: 0px 0px 10px rgba(255,255,255,0.2);
+}
+
+.recipe-img-container img{
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+  
+}
+
+.recipe-card:hover .recipe-img-container img,
+.recipe-img-container:hover img{
+  transform: scale(1.1);
+}
+
+.recipe-card-content{
+  color: black;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.recipe-title{
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  line-height: 35px;
+  margin-bottom: 13px;
+  height: 70px;
+  overflow: hidden;
+text-overflow: ellipsis;
+-webkit-line-clamp: 2;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+}
+
+.recipe-subtitle{
+  font-size: 17px;
+  height: 51px;
+}
+
+.recipe-rating{
+  margin-top: 10px;
+  color: rgb(64, 189, 64);
+}
+
+.review-count{
+  align-self: end;
+  font-size: 13px;
+}
+
+.recipe-difficulty{
+  margin-top: 10px;
+  font-weight: 400;
+  display: flex;
+  line-height: 30px;
+  align-items: start;
+  column-gap: 5px;
+}
+
+.recipe-time-container{
+  padding: 20px;
+  width: 100%;
+}
+
+.recipe-time-subContainer{
+  display: flex;
+  column-gap: 30px;
+  width: 100%;
+  padding-top: 17px;
+  justify-content: start;
+  border-top: 1px solid rgb(41, 218, 41);
+}
+
+
+
+@media(max-width:1400px){
+  .recipe-card-container{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(max-width:1020px){
+  .recipe-card-container{
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+
+
+@media(max-width:600px){
+  .recipe-card-container{
+    grid-template-columns: 1fr ;
+    justify-self: center;
+  }
+}
